@@ -1,0 +1,17 @@
+{
+  "version": "2.0",
+  "extensions": {
+    "http": {
+      "routePrefix": "",
+      "customHeaders": {
+        "Access-Control-Allow-Origin": "*"
+      }
+    }
+  }
+}
+
+
+
+
+
+  

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Walking App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1, h2 {
+            color: #007bff;
+        }
+        table {
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .table th, .table td {
+            vertical-align: middle;
+        }
+        .table th {
+            background-color: #e9ecef;
+        }
+        .section-title {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .btn-container {
+            margin-bottom: 20px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Dog Walking App</h1>
+        <div class="btn-container">
+            <a href="dog.html" class="btn btn-primary">Add Dog</a>
+            <a href="walker.html" class="btn btn-primary">Add Walker</a>
+        </div>
+        <h2 class="section-title">Dogs</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Dog ID</th>
+                    <th>Dog Name</th>
+                    <th>Owner Name</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody id="dogs-table-body">
+                
+            </tbody>
+        </table>
+        <h2 class="section-title">Walkers</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Walker ID</th>
+                    <th>Walker Name</th>
+                    <th>Areas</th>
+                </tr>
+            </thead>
+            <tbody id="walkers-table-body">
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

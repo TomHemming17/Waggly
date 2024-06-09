@@ -1,0 +1,27 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "COSMOS_DB_ENDPOINT": "https://tomhemming17.documents.azure.com:443/",
+    "COSMOS_DB_KEY": "wWzwCvrPEEC2jXdSgxv0g3g6ykh1rggAKPEP0cp0M2vY2FlBB4Zlj5Zh0Ye71YjLt9ghVqi8trKEACDbZ0B1dw==",
+    "COSMOS_DB_DATABASE": "WagglyDB",
+    "COSMOS_DB_CONTAINER_DOGS": "DogID",
+    "COSMOS_DB_CONTAINER_WALKERS": "walkerid"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
