@@ -7,21 +7,6 @@
     "COSMOS_DB_KEY": "wWzwCvrPEEC2jXdSgxv0g3g6ykh1rggAKPEP0cp0M2vY2FlBB4Zlj5Zh0Ye71YjLt9ghVqi8trKEACDbZ0B1dw==",
     "COSMOS_DB_DATABASE": "WagglyDB",
     "COSMOS_DB_CONTAINER_DOGS": "DogID",
-    "COSMOS_DB_CONTAINER_WALKERS": "walkerid"
+    "COSMOS_DB_CONTAINER_WALKERS": "WalkerID"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  

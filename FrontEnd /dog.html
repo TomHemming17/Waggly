@@ -28,16 +28,34 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-        <div class="text-center my-4">
-            <a href="index.html" class="btn btn-secondary">Back to Home</a>
-        </div>
+        <button onclick="location.href='index.html'" class="btn btn-secondary">Back to Index</button>
     </div>
 
+    <script>
+        document.getElementById('dog-form').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const dog = {
+                dogID: document.getElementById('dogID').value,
+                dogName: document.getElementById('dogName').value,
+                ownerName: document.getElementById('ownerName').value,
+                address: document.getElementById('address').value
+            };
+
+            const response = await fetch('/api/addDog', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(dog)
+            });
+
+            if (response.ok) {
+                alert('Dog added successfully!');
+                document.getElementById('dog-form').reset();
+            } else {
+                alert('Failed to add dog.');
+            }
+        });
+    </script>
 </body>
 </html>
-
-
-
-
-
-
