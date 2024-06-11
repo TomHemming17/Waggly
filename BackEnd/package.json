@@ -2,7 +2,6 @@
   "name": "waggly-backend",
   "version": "1.0.0",
   "description": "Azure Functions backend for Waggly app",
-  "main": "index.js",
   "scripts": {
     "start": "func start --javascript --port 7071"
   },
