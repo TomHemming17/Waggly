@@ -9,7 +9,7 @@ if (!endpoint || !key) {
 
 const client = new CosmosClient({ endpoint, key });
 
-const databaseId = 'WagglyDb';
+const databaseId = 'WagglyDB';
 const containerId = 'DogID';
 
 module.exports = async function (context, req) {
