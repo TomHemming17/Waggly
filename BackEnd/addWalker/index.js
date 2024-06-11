@@ -1,16 +1,13 @@
 const { CosmosClient } = require('@azure/cosmos');
 
-const endpoint = process.env.COSMOS_DB_ENDPOINT;
-const key = process.env.COSMOS_DB_KEY;
-
-if (!endpoint || !key) {
-    throw new Error("Missing Cosmos DB configuration. Please set COSMOS_DB_ENDPOINT and COSMOS_DB_KEY environment variables.");
-}
-
-const client = new CosmosClient({ endpoint, key });
+const connectionObject = {
+    endpoint: process.env.COSMOS_DB_ENDPOINT,
+    key: process.env.COSMOS_DB_KEY
+};
+const client = new CosmosClient(connectionObject);
 
 const databaseId = 'WagglyDB';
-const containerId = 'WalkersID';
+const containerId = 'WalkerID';
 
 module.exports = async function (context, req) {
     const newWalker = req.body;
@@ -26,21 +23,9 @@ module.exports = async function (context, req) {
             body: createdItem
         };
     } catch (error) {
-        context.log.error("Error adding walker to Cosmos DB", error);
         context.res = {
             status: 500,
             body: `Error: ${error.message}`
         };
     }
 };
-
-
-
-
-
-
-
-
-
-
-
